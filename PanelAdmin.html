@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración | Florería Jiménez</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <style>
+        /* Barra personalizada */
+        .navbar-custom {
+            background-color: #c0392b; /* rojo no tan fuerte */
+        }
+
+        .navbar-custom .navbar-brand,
+        .navbar-custom .btn-outline-light {
+            color: #f5f5dc !important; /* letras crema */
+        }
+
+        .navbar-custom .btn-outline-light:hover {
+            color: #ffffff !important;
+        }
+
+        /* Fondo del cuerpo */
+        body {
+            background-color: #F5EFAE; /* color de fondo */
+        }
+
+        /* Cards de botones grandes */
+        .panel-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 25px;
+            width: 60%;
+            text-align: left;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .panel-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .panel-card h4 {
+            margin-bottom: 10px;
+        }
+
+        .panel-card p {
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .panel-card a {
+            width: 100%;
+        }
+
+        /* Contenedor de lista vertical de cards */
+        .panel-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Barra superior -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">Florería Jiménez</a>
+        <div class="d-flex">
+            <button class="btn btn-outline-light" id="btnLogout">Cerrar sesión</button>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-5 text-center">
+    <h2 class="mb-4">PANEL DE ADMINISTRACIÓN</h2>
+    <p class="text-muted">Selecciona una de las siguientes opciones:</p>
+
+    <!-- Lista vertical de cards -->
+    <div class="panel-list">
+        <div class="panel-card">
+            <h4>👤 Usuarios</h4>
+            <p>Administra los usuarios registrados.</p>
+            <a href="src/pages/PanelUsuarios.html" class="btn btn-primary btn-lg">Entrar</a>
+        </div>
+
+        <div class="panel-card">
+            <h4>🛒 Ventas</h4>
+            <p>Consulta y gestiona las ventas.</p>
+            <a href="PanelVentas.html" class="btn btn-success btn-lg">Entrar</a>
+        </div>
+
+        <div class="panel-card">
+            <h4>📦 Inventario</h4>
+            <p>Agrega, edita o elimina productos.</p>
+            <a href="PanelInventario.html" class="btn btn-warning btn-lg">Entrar</a>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/dashboard.js"></script>
+</body>
+</html>

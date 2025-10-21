@@ -24,7 +24,7 @@
                     if (email === user && pwd === pwdForm) {
                         event.preventDefault()
                         sessionStorage.setItem('isLoggedIn', 'true');
-                        window.location.href = "Bienvenida.html";
+                        window.location.href = "Paneladmin.html";
                     }
                     else {
                         let divContend = document.getElementsByClassName('alert alert-danger')[0];
