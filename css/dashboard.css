@@ -1,0 +1,47 @@
+/* --- Estilos Globales (Panel Admin y otros) --- */
+body {
+  background-color: #fefce8; /* Fondo amarillo claro (el del admin) */
+}
+
+.navbar-custom {
+  background-color: #dc3545; /* Rojo (Bootstrap 'danger') */
+}
+
+.card-icon {
+  font-size: 2.5rem; /* Íconos grandes para tarjetas de admin */
+}
+
+
+/* --- Estilos Específicos (Panel Usuarios) --- */
+.summary-card {
+    border: 1px solid #dee2e6;
+    border-radius: .5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.summary-card .icon-box {
+    width: 50px;
+    height: 50px;
+    background-color: #e9ecef; /* Gris claro para el fondo del ícono */
+    border-radius: .25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0.5rem;
+}
+
+.summary-card .icon-box i {
+    font-size: 1.5rem;
+    color: #495057; /* Color oscuro para el ícono */
+}
+
+.table thead th {
+    background-color: #e9ecef; /* Fondo gris para el encabezado de la tabla */
+    border-bottom: 2px solid #dee2e6;
+}
+
+.btn-sm-custom {
+    padding: .25rem .5rem;
+    font-size: .875rem;
+}
